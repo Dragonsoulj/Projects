@@ -6,6 +6,8 @@
 
 #site-content {
   flex: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 #site-footer {
@@ -15,4 +17,13 @@
 #site-footer p {
   margin-top: 1rem;
   text-align: center;
+}
+
+.status-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#site-content h1:first-child {
+  padding-bottom: 1rem;
 }

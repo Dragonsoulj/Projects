@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="/css/design.css">
 
-    <title>Graphics and Multimedia - Dragonsoulj's Project Solutions</title>
+    <title>Fibonacci Sequence (Numbers) - Dragonsoulj's Project Solutions</title>
   </head>
   <body class="site">
     <header>
@@ -38,7 +38,7 @@
                   <a class="dropdown-item" href="/web/">Web</a>
                   <a class="dropdown-item" href="/files/">Files</a>
                   <a class="dropdown-item" href="/databases/">Databases</a>
-                  <a class="dropdown-item active" href="/media/">Graphics and Multimedia <span class="sr-only">(current)</span></a>
+                  <a class="dropdown-item" href="/media/">Graphics and Multimedia</a>
                   <a class="dropdown-item" href="/security/">Security</a>
                 </div>
               </li>
@@ -49,23 +49,16 @@
     </header>
 
     <main id="site-content" role="main" class="container">
-      <h1>Graphics and Multimedia</h1>
-      <h2>Slide Show</h2>
-      <p class="status-text text-muted"><em>Status: Incomplete</em></p>
-      <p>Make an application that shows various pictures in a slide show format. <em>Optional: Try adding various effects like fade in/out, star wipe and window blinds transitions.</em></p>
-      <h2>Stream Video from Online</h2>
-      <p class="status-text text-muted"><em>Status: Incomplete</em></p>
-      <p>Try to create your own online streaming video player.</p>
-      <h2>Mp3 Player</h2>
-      <p class="status-text text-muted"><em>Status: Incomplete</em></p>
-      <p>A simple program for playing your favorite music files. Add features you think are missing from your favorite music player.</p>
-      <h2>Watermarking Application</h2>
-      <p class="status-text text-muted"><em>Status: Incomplete</em></p>
-      <p>Have some pictures you want copyright protected? Add your own logo or text lightly across the background so that no one can simply steal your graphics off your site. Make a program that will add this watermark to the picture. <em>Optional: Use threading to process multiple images simultaneously.</em></p>
-      <h2>Turtle Graphics</h2>
-      <p class="status-text text-muted"><em>Status: Incomplete</em></p>
-      <p>This is a common project where you create a floor of 20 x 20 squares. Using various commands you tell a turtle to draw a line on the floor. You have move forward, left or right, lift or drop pen etc. Do a search online for "Turtle Graphics" for more information. <em>Optional: Allow the program to read in the list of commands from a file.</em></p>
-      <h2>GIF Creator</strong> A program that puts together multiple images (PNGs, JPGs, TIFFs) to make a smooth GIF that can be exported. <em>Optional: Make the program convert small video files to GIFs as well.</em></p>
+      <h1>Fibonacci Sequence</h1>
+      <p class="status-text text-success"><em>Status: Complete</em></p>
+      <p>Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.</p>
+      <form>
+        <input type="number" id="input-number" name="numberTarget" />
+        <input type="button" onclick="fibonacci_max()" value="To My Number" />
+        <input type="button" onclick="fibonacci_nth()" value="To My Nth Number" />
+      </form>
+      <code id="output">
+      </code>
     </main>
 
     <footer id="site-footer">
@@ -76,5 +69,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- /Bootstrap and jQuery -->
+    <script src="./fibonacci.js"></script>
   </body>
 </html>
