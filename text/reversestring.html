@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="/css/design.css">
 
-    <title>Fibonacci Sequence (Numbers) - Dragonsoulj's Project Solutions</title>
+    <title>Reverse a String (Text) - Dragonsoulj's Project Solutions</title>
   </head>
   <body class="site">
     <header>
@@ -49,13 +49,12 @@
     </header>
 
     <main id="site-content" role="main" class="container">
-      <h1>Fibonacci Sequence</h1>
+      <h2>Reverse a String</h2>
       <p class="status-text text-success"><em>Status: Complete</em></p>
-      <p>Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.</p>
+      <p>Enter a string and the program will reverse it and print it out.</p>
       <form>
-        <input type="number" id="input-number" name="numberTarget"class="form-control" />
-        <input type="button"class="form-control" onclick="fibonacci_max()" value="To My Number" />
-        <input type="button"class="form-control" onclick="fibonacci_nth()" value="To My Nth Number" />
+        <textarea id="input-string" name="input-string"class="form-control"></textarea>
+        <input type="button"class="form-control" onclick="reverse_string()" value="Reverse String" />
       </form>
       <code id="output">
       </code>
@@ -69,6 +68,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- /Bootstrap and jQuery -->
-    <script src="./fibonacci.js"></script>
+    <script src="./reversestring.js"></script>
   </body>
 </html>
